@@ -1,0 +1,38 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "启动后端应用 (Spring Boot)",
+      "request": "launch",
+      "mainClass": "com.haowu.shop.Application",
+      "projectName": "shop",
+      "cwd": "${workspaceFolder}/backend",
+      "console": "integratedTerminal",
+      "env": {
+        "SPRING_PROFILES_ACTIVE": "dev"
+      },
+      "vmArgs": "-Dspring.profiles.active=dev -Dfile.encoding=UTF-8"
+    },
+    {
+      "type": "java",
+      "name": "启动后端应用 (生产环境)",
+      "request": "launch",
+      "mainClass": "com.haowu.shop.Application",
+      "projectName": "shop",
+      "cwd": "${workspaceFolder}/backend",
+      "console": "integratedTerminal",
+      "env": {
+        "SPRING_PROFILES_ACTIVE": "prod"
+      },
+      "vmArgs": "-Dspring.profiles.active=prod -Dfile.encoding=UTF-8"
+    },
+    {
+      "type": "java",
+      "name": "调试当前文件",
+      "request": "launch",
+      "mainClass": "${file}",
+      "console": "integratedTerminal"
+    }
+  ]
+}

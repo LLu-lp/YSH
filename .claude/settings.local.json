@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls \"c:\\\\Users\\\\10510\\\\Desktop\\\\YSH\\\\web\\\\src\\\\views\\\\admin\"\" 2>/dev/null || echo \"dir_not_exist \")"
+    ]
+  }
+}
